@@ -13,7 +13,8 @@
  * each character value in the string to a scrambled combination of the
  * previous ones and returns the remainder modulo the array size. 
  *
- * hash: form hash value for string s */
+ * hash: form hash value for string s.
+ */
 unsigned hash(const char *s)
 {
 	/* Unsigned arithemetic ensures that the hash value is non-negative */
