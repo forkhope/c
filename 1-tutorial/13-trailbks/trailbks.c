@@ -12,7 +12,7 @@ int main()
 	char line[MAXLINE];	/* current input line */
 
 	while ((len = getLine(line, MAXLINE)) > 0) {
-		--len;			/* --len 是为了跳过字符串末尾的 '\0' 字符 */
+		--len;			/* --len 是为了跳过字符串末尾的 '\n' 字符 */
 		while (len > 0 && (line[len] == ' ' || line[len] == '\t')) 
 			--len;
 		if (len > 0) {	/* len > 0 表明line[]数组中还有其他非空字符 */
